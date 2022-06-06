@@ -9,8 +9,7 @@ const args = process.argv.slice(2);
 const srcChild = path.join(__dirname, 'files', 'script.js');
 
 export const spawnChildProcess = async (args, src) => {
-    const childProcess = fork(src, args);
-		childProcess.send(readable);
+    const childProcess = fork(src, args);		
 };
 
 spawnChildProcess(args, srcChild)
